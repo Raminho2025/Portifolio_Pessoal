@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR">
+<head>
+  <!-- Metadados básicos -->
+  <meta charset="UTF-8"> <!-- Define codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade em dispositivos móveis -->
+  <meta name="description" content="Meus Projetos - Mário Ramos"> <!-- Descrição para SEO e compartilhamento em redes sociais -->
+  <title>Projetos | Portfólio</title> <!-- Título exibido na aba do navegador -->
+  <!-- Link para o arquivo de estilos CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Título principal do portfólio, usado em todas as páginas para consistência -->
+  <h2 class="Portfolio">PORTFÓLIO - PESSOAL "MÁRIO RAMOS"</h2>
+
+  <header>
+    <!-- Navegação principal do site -->
+    <nav>
+      <ul>
+        <!-- Lista de links para cada seção do portfólio -->
+        <li><a href="index.html">Início</a> <!-- 'ativo' destaca a página atual --></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="projetos.html" class="ativo">Meus Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Conteúdo principal da página de projetos -->
+    <section>
+      <!-- Título da seção de projetos -->
+      <h2 class="meus-projetos">Meu Projeto</h2>
+
+      <!-- Container flexível ou grid para exibir projetos -->
+      <div class="projetos">
+        <!-- Cada projeto é representado por um card simples -->
+        <div class="projeto">
+          <div class="imagem-projeto-container">
+          <!-- Imagem do projeto -->
+          <img src="img/Projeto_1.PNG" alt="Captura do Projeto 1">
+        </div>
+          <!-- Nome do projeto -->
+          <h3 class="titulo-projeto"><a class="titulo-projeto" href="https://hamburgueria-git-main-mario-ramos-projects-39bc0cc2.vercel.app/" target="_blank">Visite o Meu Projeto Hamburgueria - "A Caseira"</a></h3>
+          <!-- Descrição breve do projeto -->
+          <p class="descricao-projeto">Projeto Hamburgueria Artesanal - "A Caseira"
+            O projeto é um site responsivo desenvolvido para uma hamburgueria artesanal fictícia. 
+            O objetivo do site é apresentar o cardápio, destacar os diferenciais da marca, 
+            permitir contato direto com os clientes e garantir uma experiência fluida tanto 
+            em dispositivos móveis quanto em desktops.
+            
+            O layout segue um estilo moderno com paleta em tons quentes (vermelho), fontes robustas e imagens em alta definição dos lanches. 
+            A navegação é simples e intuitiva, com uma página principal que é Cardápio. Com um botão que muda de cor representando o estabelecimento (verde para aberto e vermelho para fechado) em JavaScript.
+            
+            O projeto utiliza HTML5, CSS3 com Flexbox e Grid, além de JavaScript puro para a lógica de interação. Também aplica princípios básicos de SEO e boas práticas de acessibilidade, 
+            como contraste adequado e uso de tags semânticas.</p>
+        </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <!-- Rodapé com direitos autorais, aparece em todas as páginas -->
+    <p><strong>&copy; 2025 Mário Ramos.</strong> Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Inclusão do script JavaScript para funcionalidades comuns, como scroll suave ou interações -->
+  <script src="js/script.js"></script>
+</body>
+</html>

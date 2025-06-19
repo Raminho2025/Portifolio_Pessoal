@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR">
+<head>
+  <!-- Metadados básicos -->
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+  <meta name="description" content="Sobre Mim - Mário Ramos"> <!-- Descrição para SEO e compartilhamento -->
+  <title>Sobre Mim | Portfólio</title> <!-- Título exibido na aba do navegador -->
+  <!-- Link para o arquivo de estilos CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Título do Portfólio, repetido para consistência de navegação -->
+  <h2 class="Portfolio">PORTFÓLIO - PESSOAL "MÁRIO RAMOS"</h2>
+
+  <header>
+    <!-- Navegação principal -->
+    <nav>
+      <ul>
+        <!-- Itens de menu com link para cada seção do site -->
+        <li><a href="index.html">Início</a> <!-- 'ativo' destaca a página atual --></li>
+        <li><a href="sobre.html" class="ativo">Sobre Mim</a></li>
+        <li><a href="projetos.html">Meus Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Container para centralizar e estilizar a foto do portfólio -->
+  <div class="foto-container">
+    <img src="img/mario.JPG" alt="Foto de Mário Ramos" class="foto-portfolio"> <!-- Imagem com classe para estilo circular e borda -->
+  </div>
+
+  <main>
+    <div class="descricao-container">
+    <!-- Seção de introdução 'Sobre Mim' -->
+    <section class="intro">
+      <!-- Título da seção -->
+      <h2 class="sobre_mim">Um pouco sobre mim</h2>
+      <!-- Parágrafo descritivo com informações profissionais e pessoais -->
+      <p class="descricao">
+        Me chamo Mário Ramos, sou um desenvolvedor web fullstack, apaixonado por criar experiências incríveis na web, unindo design funcional e performance eficiente. Ao longo da minha trajetória, desenvolvi habilidades sólidas tanto no front-end quanto no back-end, com foco em entregar soluções completas, escaláveis e com ótima usabilidade.
+      </p>
+      <p class="descricao">
+        Domino HTML5, CSS3 e JavaScript no desenvolvimento de interfaces modernas e responsivas, utilizando frameworks como React.js e Vue.js para criar aplicações dinâmicas e interativas. No back-end, trabalho com Node.js, Express, Python (Django/Flask) e PHP, sempre priorizando arquitetura limpa e APIs bem estruturadas.
+      </p>
+      <p class="descricao">
+        Tenho experiência com bancos de dados relacionais (MySQL, PostgreSQL) e não relacionais (MongoDB), além de familiaridade com ORMs como Sequelize e Mongoose. Para controle de versão, utilizo Git e GitHub como ferramentas indispensáveis em projetos colaborativos.
+      </p>
+      <p class="descricao">
+        Sou entusiasta de DevOps e automação de deploys usando Docker, GitHub Actions e Vercel, garantindo integração e entrega contínuas. Também possuo conhecimentos em SEO, acessibilidade web (a11y) e boas práticas de segurança, essenciais para qualquer aplicação de produção.
+      </p>
+      <p class="descricao">
+        Além das habilidades técnicas, valorizo o trabalho em equipe, a comunicação clara e o aprendizado contínuo. Estou sempre explorando novas tecnologias, buscando evoluir como profissional e criar soluções que realmente façam a diferença.
+      </p>
+    </section>
+  </div>
+  </main>
+
+  <footer>
+    <!-- Rodapé com direitos autorais -->
+    <p><strong>&copy; 2025 Mário Ramos.</strong> Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão flutuante para voltar ao topo da página -->
+  <button id="voltarTopo" title="Voltar ao topo">⬆️</button>
+
+  <!-- Inclusão do script JavaScript para interatividade -->
+  <script src="js/script.js"></script>
+</body>
+</html>

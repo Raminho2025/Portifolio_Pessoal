@@ -1,0 +1,337 @@
+/* Reset básico para remover margens, espaçamentos e ajustar box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e border na largura/altura totais */
+}
+
+/* Estilos base do body: fonte, background e layout flex para estruturar header, main e footer */
+body {
+  font-family: Arial, sans-serif; /* Fonte principal */
+  line-height: 1.6;               /* Espaçamento entre linhas */
+  min-height: 100vh;              /* Garante altura mínima da viewport */
+
+  /* Fundo com imagem e overlay escuro */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('/img/backgroud.webp') no-repeat center center/cover;
+  color: #FFEB99; /* Cor do texto para contraste */
+
+  display: flex;
+  flex-direction: column; /* Organiza header, main e footer em coluna */
+}
+
+/* Cabeçalho estilizado com cor de fundo e texto centralizado */
+header {
+  background: #2AB4A9;
+  border-color: #333;
+  border: solid;
+  border-width: 3px;
+  color: #333;
+  padding: 10px 0;      /* Espaço interno vertical */
+  text-align: center;   /* Texto centralizado */
+}
+
+/* Menu de navegação: lista inline com espaçamento */
+nav ul {
+  list-style: none;       /* Remove marcadores padrão */
+  display: flex;          /* Exibe itens em linha */
+  justify-content: center;/* Centraliza horizontalmente */
+  gap: 15px;              /* Espaçamento entre itens */
+}
+
+/* Links de navegação */
+nav ul li a {
+  color: #333;        /* Cor específica para links */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+/* Destaca o item ativo no menu */
+.ativo {
+  font-weight: bold;      /* Negrito */
+  text-decoration: underline;
+  color: #555;         /* Cor diferenciada */
+}
+
+/* Área principal com margem para afastar do header */
+main {
+  margin: 50px;
+}
+
+/* Rodapé fixo no rodapé da página */
+footer {
+  background: #2AB4A9;
+  border-color: #333;
+  border: solid;
+  border-width: 3px;
+  color: #333;
+  text-align: center;
+  position: fixed;        /* Fixa o footer na viewport */
+  bottom: 0;
+  width: 100%;            /* Ocupa toda a largura */
+  font-size: 0.8rem;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+
+/* Responsividade: ajusta layout de nav e projetos em telas pequenas */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Menu em coluna */
+  }
+  .projetos {
+    flex-direction: column; /* Projetos em coluna */
+  }
+  .foto-container {
+    flex-direction: column; /* Projetos em coluna */
+  }
+  .container-contato {
+    flex-direction: column; /* Projetos em coluna */
+  }
+  .descricao-container {
+    flex-direction: column; /* Projetos em coluna */
+  }
+  .imagem-projeto-container {
+    flex-direction: column; /* Projetos em coluna */
+  }
+}
+
+/* Container de projetos: flexbox com wrap */
+.projetos {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha */
+  gap: 20px;       /* Espaçamento entre cards */
+  background-color: #333;
+  opacity: 0.7; /* Aplica 60% de opacidade à DIV e TODO seu conteúdo */
+  margin: 20px 10px;
+  border: solid;
+  border-color: #2AB4A9;
+}
+
+/* Card de projeto com largura flexível */
+.projeto {
+  flex: 1 1 45%;   /* Cresce, encolhe e largura base 45% */
+}
+
+/* Estilização de formulários */
+form {
+  max-width: 400px; /* Limita largura do formulário */
+}
+
+/* Campos de input e textarea com largura total */
+input,
+textarea {
+  width: 100%;       /* Ocupa toda a largura do container */
+  margin-bottom: 10px; /* Espaço abaixo de cada campo */
+  padding: 8px;       /* Espaço interno */
+}
+
+/* Mensagens de erro em vermelho */
+.erro {
+  color: red;
+}
+
+/* Estilo para mensagens de sucesso */
+.sucesso {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Seções de texto justificadas e centralizadas */
+.descricao{
+  text-align: justify;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaço interno */
+  font-size: 16px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+}
+
+.sobre_mim {
+  text-align: justify;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaço interno */
+  font-size: 32px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+  text-shadow:
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* 4 sombras para formar o "contorno" */
+}
+
+/* Títulos com alinhamento e espaçamento */
+
+.Portfolio,
+.container-contato,
+.fale-comigo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  color: #2AB4A9;
+}
+
+.titulo_1 {
+  text-align: center;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaço interno */
+  font-size: 35px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+
+  text-shadow:
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* 4 sombras para formar o "contorno" */
+}
+
+.sou {
+  text-align: center;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */    /* Espaço interno */
+  font-size: 35px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+
+  text-shadow:
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* 4 sombras para formar o "contorno" */
+}
+
+.titulo_2 {
+  text-align: center;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaço interno */
+  font-size: 60px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+
+  text-shadow:
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* 4 sombras para formar o "contorno" */
+}
+
+/* Estilo do botão de envio */
+.btn-enviar {
+  background-color: #333;
+  color: #2AB4A9;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover no botão para feedback visual */
+.btn-enviar:hover {
+  background-color: #555;
+  transform: scale(1.05);
+  border-color: #2AB4A9;
+  opacity: 0.7;
+  border-style:solid;
+ 
+}
+
+.titulo-projeto{
+  text-align: center;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaço interno */
+  font-size: 16px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+}
+
+.descricao-projeto {
+  text-align: justify;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaço interno */
+  font-size: 16px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+}
+
+.imagem-projeto-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  margin: 20px 0;          /* Espaço acima e abaixo */
+}
+
+.meus-projetos{
+  text-align: center;
+  max-width: 900px;    /* Limita largura para melhor leitura */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  padding: 20px;       /* Espaço interno */
+  font-size: 32px;
+  color: #2AB4A9;
+  line-height: 1.6;    /* Espaçamento entre linhas */
+}
+
+.mario-ramos {
+  color: #333;
+}
+
+.descricao-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background-color: #333;
+  opacity: 0.7; /* Aplica 60% de opacidade à DIV e TODO seu conteúdo */
+  border: solid;
+  border-color: #2AB4A9;
+}
+
+.imagem-projeto-container {
+  width: 100%;
+  max-width: 100%; /* garante que o contêiner não ultrapasse os limites */
+  overflow: hidden; /* oculta excesso, se necessário */
+}
+
+.imagem-projeto-container img {
+  width: 45%;       /* ocupa 100% da largura disponível */
+  height: auto;      /* mantém a proporção original */
+  display: block;    /* remove espaçamento inferior indesejado */
+  border-radius: 8px; /* opcional: cantos arredondados */
+}
+
+/* Imagem de portfólio em círculo com borda e sombra */
+.foto-container img {
+  width: 250px;       /* ocupa 100% da largura disponível */
+  height: 250px;      /* mantém a proporção original */
+  display: block;    /* remove espaçamento inferior indesejado */
+  border-radius: 8px; /* opcional: cantos arredondados */
+  object-fit: cover;       /* Cobre todo o container sem distorcer */
+  border-radius: 50%;      /* Deixa a imagem circular */
+  border: 5px solid #2AB4A9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+/* Container para foto de perfil */
+.foto-container {
+  width: 100%;
+  max-width: 100%; /* garante que o contêiner não ultrapasse os limites */
+  overflow: hidden; /* oculta excesso, se necessário */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  margin: 20px 0;          /* Espaço acima e abaixo */
+}

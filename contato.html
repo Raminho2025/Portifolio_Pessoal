@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR">
+<head>
+  <!-- Configurações primárias de metadados -->
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a viewport para dispositivos móveis -->
+  <meta name="description" content="Fale comigo - Mário Ramos"> <!-- Descrição para SEO e compartilhamento -->
+  <title>Contato | Portfólio</title> <!-- Título exibido na aba do navegador -->
+  <!-- Vinculação do arquivo CSS externo para estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho fixo com nome do portfólio -->
+  <h2 class="Portfolio">PORTFÓLIO - PESSOAL "MÁRIO RAMOS"</h2>
+
+  <header>
+    <!-- Barra de navegação principal -->
+    <nav>
+      <ul>
+        <!-- Itens de menu com link para cada seção do site -->
+        <li><a href="index.html">Início</a> <!-- 'ativo' destaca a página atual --></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="projetos.html">Meus Projetos</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Área principal de conteúdo -->
+    <section>
+      <!-- Título da seção de contato -->
+      <h2 class="fale-comigo">Fale comigo</h2>
+
+      <!-- Container para centralizar e estilizar o formulário de contato -->
+      <div class="container-contato">
+        <!-- Formulário de contato com validação HTML5 pelo atributo 'required' -->
+        <form id="formContato">
+          <!-- Campo de nome do usuário -->
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required placeholder="Digite seu nome">
+
+          <!-- Campo de e-mail para contato -->
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" required placeholder="Digite seu e-mail">
+
+          <!-- Área de texto para a mensagem do usuário -->
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" required placeholder="Escreva sua mensagem aqui"></textarea>
+
+          <!-- Botão de envio do formulário -->
+          <button class="btn-enviar" type="submit">Enviar</button>
+
+          <!-- Parágrafo para exibir mensagens de erro ou confirmação -->
+          <p id="msgErro" class="erro"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Rodapé com informações de copyright -->
+    <p><strong>&copy; 2025 Mário Ramos.</strong> Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Inclusão do script JS para validações e interações (ex: feedback de envio) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
