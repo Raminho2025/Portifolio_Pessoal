@@ -27,10 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Se passou nas validações, exibe mensagem de sucesso
-      msgErro.textContent = "Mensagem enviada com sucesso!";
-      msgErro.className = "sucesso"; // Aplica estilo de sucesso definido no CSS
-        form.reset(); // Limpa os campos do formulário
+      // Monta a mensagem para o WhatsApp
+    const numeroWhatsApp = "5519974134192"; // Seu número com DDI + DDD
+    const titulo = "=============== Mensagem do Portfólio ==================";
+    const texto = `${titulo}\n\nOlá, me chamo ${nome}.\nMeu e-mail é: ${email}.\nMensagem: ${mensagem}`;
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+  // Redireciona para o WhatsApp
+  window.open(urlWhatsApp, "_blank");
+
+  msgErro.textContent = "Redirecionando para o WhatsApp...";
+  msgErro.className = "sucesso";
+  form.reset();
 
         // Limpa a mensagem de feedback após 5 segundos
         setTimeout(() => {

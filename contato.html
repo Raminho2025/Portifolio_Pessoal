@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a viewport para dispositivos móveis -->
   <meta name="description" content="Fale comigo - Mário Ramos"> <!-- Descrição para SEO e compartilhamento -->
   <title>Contato | Portfólio</title> <!-- Título exibido na aba do navegador -->
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Vinculação do arquivo CSS externo para estilos -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -31,7 +33,7 @@
     <!-- Área principal de conteúdo -->
     <section>
       <!-- Título da seção de contato -->
-      <h2 class="fale-comigo">Fale comigo</h2>
+      <h2 class="fale-comigo">Fale Comigo</h2>
 
       <!-- Container para centralizar e estilizar o formulário de contato -->
       <div class="container-contato">
@@ -50,7 +52,9 @@
           <textarea id="mensagem" required placeholder="Escreva sua mensagem aqui"></textarea>
 
           <!-- Botão de envio do formulário -->
-          <button class="btn-enviar" type="submit">Enviar</button>
+          <button class="btn-enviar" type="submit">
+          <i class="fab fa-whatsapp"></i> Enviar via WhatsApp
+          </button>
 
           <!-- Parágrafo para exibir mensagens de erro ou confirmação -->
           <p id="msgErro" class="erro"></p>
