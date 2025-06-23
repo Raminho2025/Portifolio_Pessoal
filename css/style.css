@@ -81,20 +81,65 @@ footer {
   nav ul {
     flex-direction: column; /* Menu em coluna */
   }
+  .titulo_2 {
+    font-size: 30px; /* reduz para celulares */
+    padding: 10px;
+  }
+  .titulo_1, .sou {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .meus-projetos,
+  .sobre_mim {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .descricao,
+  .descricao-projeto {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .projeto {
+    flex: 1 1 90%;
+  }
   .projetos {
     flex-direction: column; /* Projetos em coluna */
+    align-items: center;
   }
   .foto-container {
-    flex-direction: column; /* Projetos em coluna */
+    flex-direction: column; /* Fotos em coluna */
   }
   .container-contato {
     flex-direction: column; /* Projetos em coluna */
   }
   .descricao-container {
-    flex-direction: column; /* Projetos em coluna */
+    flex-direction: column; /* Descrição em coluna */
   }
   .imagem-projeto-container {
-    flex-direction: column; /* Projetos em coluna */
+    flex-direction: column; /* fotos em coluna */
+  }
+  .imagem-projeto-container img {
+    width: 90%;
+  }
+
+  .foto-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  footer {
+    position: fixed;
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  main {
+    margin: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
